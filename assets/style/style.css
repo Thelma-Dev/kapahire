@@ -5,7 +5,7 @@
     --app-blue:#3c57ff;
     --app-blue-hover:#233ff8;
     --app-light-bg: #f0f4f6;
-    --app-border-radius: 6px;
+    --app-border-radius: 10px;
     --text-color: rgb(0, 0, 0, 0.8);;
 }
 
@@ -15,11 +15,132 @@ html {
 }
 
 body {
-    background-color: var(--app-light-bg);
+    /* background: #f0f4f6 url(../img/background.jpg) center center / cover no-repeat fixed; */
+    background-color: #afb7ec;
     height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    padding: 60px 0;
+    display: grid;
+    place-items: center;
 }
 
 .container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
+}
+
+/* -------------------------------- */
+/*              Loginpage           */
+/* -------------------------------- */
+
+.login-page {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-image {
+    width: 335px;
+    height: 500px;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.login-form {
+    width: 750px;
+    height: 500px;
+    border: none;
+    padding: 30px 60px;
+}
+
+.login-form h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.login-form h2 span {
+    color: var(--app-blue);
+    font-weight: 900;
+}
+
+form {
+    margin-top: 40px;
+    border: none;
+    width: 500px;
+    padding: 15px;
+    height: 300px;
+    margin-inline: auto;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding:15px 15px;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin: 7px 0;
+    border-radius: var(--app-border-radius);
+    outline: none;
+    border-bottom-width: 1px;
+}
+
+input[type=text]:focus {
+    border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+::placeholder {
+    color: var(--text-color);
+}
+
+.password-reset {
+    margin-top: 10px;
+}
+
+.password-reset a {
+    text-decoration: none;
+}
+
+input[type=button] {
+    color: #fff;
+    font-size: 16px;
+    background-color: var(--app-blue);
+    border: none;
+    width: 150px;
+    height: 46px;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.button {
+    text-align: center;
+}
+
+input[type="button"]:hover {
+    background-color: var(--app-blue-hover);
+}
+
+#signup {
+    background-color: #f0f4f6;
+    color: var(--app-blue);
+    border: 1px solid var(--app-blue);
 }
