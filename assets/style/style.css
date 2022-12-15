@@ -1,0 +1,25 @@
+@import './reset.css';
+
+:root {
+    --app-dark-bg:#1a1d28;
+    --app-blue:#3c57ff;
+    --app-blue-hover:#233ff8;
+    --app-light-bg: #f0f4f6;
+    --app-border-radius: 6px;
+    --text-color: rgb(0, 0, 0, 0.8);;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in-out;
+}
+
+body {
+    background-color: var(--app-light-bg);
+    height: 100vh;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
