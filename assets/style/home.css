@@ -1,0 +1,234 @@
+@import './reset.css';
+
+:root {
+    --app-dark-blue:#1a1d28;
+    --app-blue:#3c57ff;
+    --app-blue-hover:#233ff8;
+    --app-light-bg: #f0f2f4;
+    --app-border-radius: 10px;
+    --text-color: rgb(0, 0, 0, 0.8);;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in-out;
+}
+
+body {
+    background-color: var(--app-light-bg);
+    height: 100vh;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+/* -------------------------------- */
+/* Header                           */
+/* -------------------------------- */
+
+header {
+    width: 100%;
+    height: 66px;
+    overflow: hidden;
+    background-color: #fff;
+    border: none;
+    padding: 8px 0px;
+}
+  
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 5%;
+    height: 48px;
+    border: none;
+}
+
+.title img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+form {
+    width: 20%;
+    text-align: right;
+}
+  
+form input {
+    display: inline;
+    line-height: 36px;
+    margin: 10px 0;
+}
+  
+form input[type="search"] {
+    width: 150px;
+    height: 36px;
+    padding: 0 30px 0 45px;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.1) url(../img/icon.png) no-repeat 20px 10px;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 25px;
+    text-decoration: none;
+    background-size: 17px;
+    transition: border-color 0.25s ease-in-out;
+}
+  
+form input[type="search"]:hover {
+    border: 1px solid rgba(0, 0, 0, .6)
+}
+  
+
+nav {
+    width: 60%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: var(--app-blue-hover);
+}
+
+nav ul li + li {
+    margin-left: 30px;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255, 0.2);
+    text-align: right;
+    margin: 0px 15px;
+    border-radius: 50%;
+}
+
+.profile img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.profile:hover {
+    border: 1px solid rgb(255, 255, 255, 0.4);
+}
+
+/* -------------------------------- */
+/* Kaphire page                     */
+/* -------------------------------- */
+
+section {
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+}
+
+.columns {
+    border: none;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.profile-info {
+    width: 250px;
+    height: 400px;
+    border-radius: var(--app-border-radius);
+    background-color: #fff;
+}
+
+.posts {
+    width: 510px;
+    height: 400px;
+    border-radius: var(--app-border-radius);
+    background-color: #fff;
+}
+
+.friends {
+    width: 300px;
+    height: 500px;
+    border-radius: var(--app-border-radius);
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.friends p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--app-dark-blue);
+}
+
+.other-users {
+    margin-top: 20px;
+    border: none;
+    height: 400px;
+
+}
+
+.user {
+    width: 100%;
+    height: 80px;
+    border-radius: var(--app-border-radius);
+    padding: 10px;
+    background-color: rgb(185, 183, 183, 0.6);
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    width: 55px;
+    height: 55px;
+    border: none;
+    text-align: right;
+    border-radius: 50%;
+}
+
+.user img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.user-info {
+    border: none;
+    width: 180px;
+    height: 55px;
+    padding: 3px 5px;
+}
+
+.user-info p {
+    text-align: left;
+    color: var(--app-dark-blue);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.user-info .city {
+    color: rgb(124, 124, 124);
+    font-size: 14px;
+}
