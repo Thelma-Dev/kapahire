@@ -14,12 +14,12 @@ function getElement(selector, parent = document) {
 }
 
 const loginBtn = getElement('login');
+let invalidMsg = select('.message');
 const login = [
-    { email: 'thelma64@gmail.com', password: 'The@45$$' },
+    { email: 'freeman64@gmail.com', password: 'Fre@45$$' },
 ];
 
 localStorage.setItem('login', JSON.stringify(login));
-console.log(localStorage);
 
 const loginDetails = JSON.parse(localStorage.getItem('login'));
 
@@ -37,26 +37,27 @@ function validate() {
         const validPassword = `${details.password}`
     
         if (email.length === 0) {
-            message += 'Email is required';
+            message += 'Email is required ';
             valid = false;
-            count++;
         } else if (email !== validEmail) {
-            message += 'Username or Password is invalid'
+            message += 'Username or Password is invalid '
             valid = false;
         }
 
         if (password.length === 0) {
-            message += 'Postal code is required';
+            message += 'Password is required ';
             valid = false;
-            count++;
         } else if (password !== validPassword) {
-            message += 'Username or Password is invalid'
+            message += 'Username or Password is invalid '
             valid = false;
         }
 
         if (!valid) {
-            console.log(message);
+            invalidMsg.classList.add('is-visible');
+            invalidMsg.innerHTML = message;
         } else {
+            password = '';
+            email = '';
             window.location.replace("home.html");
             console.log('Form submitted');
         }

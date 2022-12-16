@@ -4,6 +4,9 @@
     --app-dark-blue:#1a1d28;
     --app-blue:#3c57ff;
     --app-blue-hover:#233ff8;
+    --app-purple-hover: #7526fd;
+    --app-light-purple: #4e2f83;
+    --app-purple:#833cff;
     --app-light-bg: #f0f1f2;
     --app-border-radius: 10px;
     --text-color: rgb(0, 0, 0, 0.8);;
@@ -33,7 +36,7 @@ header {
     width: 100%;
     height: 66px;
     overflow: hidden;
-    background-color: rgb(33, 33, 58);
+    background-color: rgb(78, 47, 131, 0.9);
     border: none;
     padding: 8px 0px;
 }
@@ -50,7 +53,7 @@ header {
 .title h1 {
     font-size: 22px;
     font-weight: 600;
-    color: var(--app-blue);
+    color: #f0f4f6;
     line-height: 56px;
     text-transform: uppercase;
     letter-spacing: 0.3px;
@@ -110,10 +113,11 @@ nav ul li a {
     text-decoration: none;
     letter-spacing: 0.2px;
     cursor: pointer;
+    transition: all 0.25s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: var(--app-blue-hover);
+    color: var(--text-color);
 }
 
 nav ul li + li {
@@ -123,9 +127,9 @@ nav ul li + li {
 .profile {
     width: 50px;
     height: 50px;
-    border: 1px solid rgb(255, 255, 255, 0.2);
+    border: none;
     text-align: right;
-    margin: 0px 15px;
+    margin: 3px 15px;
     border-radius: 50%;
 }
 
@@ -135,10 +139,6 @@ nav ul li + li {
     border-radius: 50%;
 }
 
-.profile:hover {
-    border: 1px solid rgb(255, 255, 255, 0.4);
-}
-
 /* -------------------------------- */
 /* Kaphire page                     */
 /* -------------------------------- */
@@ -146,7 +146,7 @@ nav ul li + li {
 section {
     margin-top: 30px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .columns {
@@ -210,13 +210,13 @@ section {
     font-size: 18px;
     width: 30px;
     height: 30px;
-    color: var(--app-blue);
+    color: var(--app-light-purple);
     cursor: pointer;
     transition: all 0.25s ease-in-out;
 }
 
 .profession i:hover {
-    color: var(--app-blue-hover);
+    color: var(--app-purple-hover);
 }
 
 .analytics {
@@ -226,7 +226,6 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
 }
 
 .connections, .followers {
@@ -235,6 +234,7 @@ section {
     padding: 15px 10px;
     text-align: center;
     border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 15px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
     border-radius: var(--app-border-radius);
     background-color: #fff;
 }
@@ -267,9 +267,9 @@ section {
 .upgrade button {
     color: #fff;
     font-size: 14px;
-    background-color: #f0f4f6;
-    color: var(--app-blue);
-    border: 1px solid var(--app-blue);
+    background-color: #fff;
+    color: var(--app-light-purple);
+    border: 1px solid var(--app-light-purple);
     width: 180px;
     height: 46px;
     padding: 10px;
@@ -282,7 +282,7 @@ section {
 }
 
 button:hover {
-    background-color: var(--app-blue);
+    background-color: var(--app-light-purple);
     color: #f0f4f6;
 }
 
@@ -484,7 +484,7 @@ button:hover {
 }
 
 .user:hover {
-    background-color: #f0f1f1;
+    background-color: rgba(243, 241, 241, 0.5);
 }
 
 .userinfo p {
@@ -497,4 +497,75 @@ button:hover {
 .userinfo P + P {
     color: rgb(73, 73, 73, 0.8);
     font-size: 14px;
+}
+
+/* -------------------------------- */
+/*           Footer                 */
+/* -------------------------------- */
+
+footer {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    border: none;
+    margin-top: 60px;
+    padding: 10px;
+    background-color: #1a1d28;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    border: none;
+    border-radius: var(--app-border-radius);
+    width: 100px;
+    height: 100px;
+    margin-inline: auto;
+}
+
+.social-icons {
+    height: 100px;
+    margin-inline: auto;
+    padding: 10px;
+    border: none;
+}
+  
+.social-icons ul {
+    list-style: none;
+    text-align: center;
+}
+  
+.social-icons ul li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+  
+.social-icons ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    color: #fff;
+    border: 1px solid rgb(255 255 255 / 0.15);
+    border-radius: var(--app-border-radius);
+}
+    
+.fa-brands:hover  {
+    color: var(--app-light-purple);
+    transition: background-color 0.25s ease-in-out;
+}
+  
+p.copyright {
+    font-size: 14px;
+    color:  #adadad;
+    opacity: 0.4;
+    font-weight: 400; 
+    text-align: center;
+    margin-top: 15px;
 }

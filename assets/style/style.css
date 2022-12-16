@@ -4,6 +4,9 @@
     --app-dark-bg:#1a1d28;
     --app-blue:#3c57ff;
     --app-blue-hover:#233ff8;
+    --app-purple-hover: #7526fd;
+    --app-purple:#833cff;
+    --app-light-purple: #4e2f83;
     --app-light-bg: #f0f4f6;
     --app-border-radius: 10px;
     --text-color: rgb(0, 0, 0, 0.8);;
@@ -16,7 +19,7 @@ html {
 
 body {
     /* background: #f0f4f6 url(../img/background.jpg) center center / cover no-repeat fixed; */
-    background-color: #afb7ec;
+    background-color: #4e2f83;
     height: 100vh;
     overflow: hidden;
 }
@@ -35,21 +38,14 @@ main {
 /* -------------------------------- */
 /*              Loginpage           */
 /* -------------------------------- */
-
-.logo {
-    margin-inline: auto;
-    width: 100px;
-    height: 100px;
-    border: none;
-}
-
 .login-page {
-    width: 100%;
+    width: 80%;
     height: 500px;
     background-color: #fff;
     border: none;
     border-radius: 20px;
     display: flex;
+    margin-inline: auto;
     flex-direction: row;
 }
 
@@ -67,29 +63,42 @@ img {
 }
 
 .login-form {
-    width: 750px;
+    width: 530px;
     height: 500px;
     border: none;
-    padding: 25px 60px;
+    padding: 20px 20px;
 }
 
 .login-form h2 {
-    margin-top: 8px;
+    margin-top: 15px;
     font-size: 40px;
     font-weight: 600;
     text-align: center;
     color: var(--text-color);
 }
 
+.login-form .note {
+    margin-top: 8px;
+    margin-left: 30px;
+    border: none;
+    padding: 0px 5px;
+    width: 280px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    color: rgb(0, 0, 0, 0.5);
+}
+
 .login-form h2 span {
-    color: var(--app-blue);
+    color: var(--app-purple);
+    font-size: 45px;
     font-weight: 900;
 }
 
 form {
-    margin-top: 10px;
+    margin-top: 15px;
     border: none;
-    width: 500px;
+    width: 400px;
     padding: 15px;
     height: 300px;
     margin-inline: auto;
@@ -101,14 +110,19 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid rgb(0, 0, 0, 0.2);
     box-sizing: border-box;
-    margin: 7px 0;
+    margin: 8px 0;
     border-radius: var(--app-border-radius);
     outline: none;
     border-bottom-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 15px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
 }
 
-input[type=text]:focus {
-    border: 1px solid rgb(0, 0, 0, 0.5);
+input[type=text] {
+    margin-top: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border: 1px solid rgb(0, 0, 0, 0.4);
 }
 
 ::placeholder {
@@ -120,13 +134,14 @@ input[type=text]:focus {
 }
 
 .password-reset a {
+    color: #4e2f83;
     text-decoration: none;
 }
 
 input[type=button] {
     color: #fff;
     font-size: 16px;
-    background-color: var(--app-blue);
+    background-color: var(--app-light-purple);
     border: none;
     width: 150px;
     height: 46px;
@@ -135,7 +150,8 @@ input[type=button] {
     cursor: pointer;
     border-radius: 6px;
     text-align: center;
-    transition: 0.25s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    transition: all 0.25s ease-in-out;
 }
 
 .button {
@@ -143,11 +159,32 @@ input[type=button] {
 }
 
 input[type="button"]:hover {
-    background-color: var(--app-blue-hover);
+    background-color: var(--app-purple-hover);
 }
 
 #signup {
-    background-color: #f0f4f6;
-    color: var(--app-blue);
-    border: 1px solid var(--app-blue);
+    background-color: #fff;
+    color: var(--app-light-purple);
+    border: 1px solid var(--app-light-purple);
+}
+
+#signup:hover {
+    background-color: var(--app-light-purple);
+    color: #fff;
+}
+
+.message {
+    color: #c12020; 
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    height: 25px;
+    padding: 0 3px;
+    visibility: hidden; 
+    opacity: 0;
+}
+
+.message.is-visible {
+    visibility: visible;
+    opacity: 1;
 }
