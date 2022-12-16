@@ -18,8 +18,8 @@ html {
 }
 
 body {
-    /* background: #f0f4f6 url(../img/background.jpg) center center / cover no-repeat fixed; */
-    background-color: #4e2f83;
+    background: #1a1d28 url(../img/bg.png) center center / cover no-repeat fixed;
+    /* background-color: #4e2f83; */
     height: 100vh;
     overflow: hidden;
 }
@@ -61,6 +61,11 @@ img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
+
+/* -------------------------------- */
+/*              Form                */
+/* -------------------------------- */
 
 .login-form {
     width: 530px;
@@ -130,13 +135,17 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .password-reset {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .password-reset a {
     color: #4e2f83;
     text-decoration: none;
 }
+
+/* -------------------------------- */
+/*            Buttons               */
+/* -------------------------------- */
 
 input[type=button] {
     color: #fff;
@@ -173,6 +182,10 @@ input[type="button"]:hover {
     color: #fff;
 }
 
+/* -------------------------------- */
+/*           Error Message          */
+/* -------------------------------- */
+
 .message {
     color: #c12020; 
     font-weight: 400;
@@ -187,4 +200,21 @@ input[type="button"]:hover {
 .message.is-visible {
     visibility: visible;
     opacity: 1;
+}
+
+/* -------------------------------- */
+/*             credentials          */
+/* -------------------------------- */
+
+.credentials {
+    border: none;
+    padding: 2px;
+    height: 50px;
+    width: 310px;
+    margin: 4px 0 0 auto;
+}
+
+.credentials p {
+    color: #f0f4f6;
+    font-size: 14px;
 }

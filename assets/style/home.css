@@ -267,9 +267,9 @@ section {
 .upgrade button {
     color: #fff;
     font-size: 14px;
-    background-color: #fff;
-    color: var(--app-light-purple);
-    border: 1px solid var(--app-light-purple);
+    background-color: var(--app-light-purple);
+    color: #fff;
+    border: none;
     width: 180px;
     height: 46px;
     padding: 10px;
@@ -282,12 +282,12 @@ section {
 }
 
 button:hover {
-    background-color: var(--app-light-purple);
-    color: #f0f4f6;
+    background-color: var(--app-purple-hover);
 }
 
 .export {
     height: 50px;
+    cursor: pointer;
 }
 
 
@@ -337,6 +337,11 @@ button:hover {
     font-size: 20px;
     width: 30px;
     height: 30px;
+    cursor: pointer;
+}
+
+.header .icons i:hover {
+    color: var(--app-light-purple);
 }
 
 .social-posts {
@@ -352,6 +357,7 @@ button:hover {
     width: 160px;
     height: 150px;
     border: none;
+    cursor: pointer;
 }
 
 .post p {
@@ -460,6 +466,8 @@ button:hover {
     background-color: #fff;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
 }
 
 .image {
@@ -484,7 +492,7 @@ button:hover {
 }
 
 .user:hover {
-    background-color: rgba(243, 241, 241, 0.5);
+    background-color: rgba(243, 241, 241, 0.8);
 }
 
 .userinfo p {

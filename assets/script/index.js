@@ -49,7 +49,8 @@ function getProfileImage(el) {
         userStorage.classList.add('user');
         
 
-        userImage.innerHTML = `<img src= "${element.picture.medium}" max-width="100%" max-height="100%" border-radius="50%" >`;
+        userImage.innerHTML = `<img src= "${element.picture.medium}" max-width="100%" max-height="100%" + 
+                                border-radius="50%" >`;
 
         userInfo.innerHTML = `<p>${element.name.first} ${element.name.last}</p>` +
                              `<p>${element.location.city}</p>`
@@ -59,15 +60,4 @@ function getProfileImage(el) {
         userbox.append(userStorage);
     });
 }
-
-// function getUsername(el) {
-//     el.forEach(element => {
-//         let userInfo = document.createElement('div');
-//         userInfo.classList.add('userinfo');
-
-//         userInfo.innerHTML = `<p>${element.name.first} ${element.name.last}</p>` +
-//                              `<p>${element.location.city}</p>`
-//         userbox.append(userInfo);
-//     }); 
-// }
 
