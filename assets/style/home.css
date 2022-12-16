@@ -369,7 +369,12 @@ button:hover {
 .post p + P {
     margin-top: 0px;
     font-size: 11px;
-    color:rgba(0, 0, 0, .4)
+    color:rgba(0, 0, 0, .4);
+    pointer-events: none;
+}
+
+.post p:hover {
+    color: #000;
 }
 
 /* -------------------------------- */
