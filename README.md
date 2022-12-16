@@ -5,4 +5,4 @@ This project uses local storage to store the required email and password, while 
 
 
 # Demo
-Click [here](https://thelma-dev.github.io/Rider/) to view.
+Click [here](https://thelma-dev.github.io/kapahire/) to view.
