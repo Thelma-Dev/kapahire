@@ -59,7 +59,6 @@ function validate() {
             password = '';
             email = '';
             window.location.replace("home.html");
-            console.log('Form submitted');
         }
     }
 }

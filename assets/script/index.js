@@ -13,6 +13,10 @@ function getElement(selector, parent = document) {
     return parent.getElementById(selector);
 }
 
+const logout = select('.logout');
+const logoutBtn = select('.logout a');
+const profile = select('.profile');
+
 
 const userStorage = select('.user');
 const userbox = select('.other-users');
@@ -30,7 +34,7 @@ async function getUsers() {
         if(response.status >= 200 && response.status < 400) {
             const data = await response.json();
             const users = data.results;
-            getProfileImage(users);
+            getProfileData(users);
         }
     } catch(error) {
         console.log(error);
@@ -38,7 +42,7 @@ async function getUsers() {
 }
 getUsers();
 
-function getProfileImage(el) {
+function getProfileData(el) {
     el.forEach(element => {
         let userImage = document.createElement('div');
         let userStorage = document.createElement('div');
@@ -60,4 +64,12 @@ function getProfileImage(el) {
         userbox.append(userStorage);
     });
 }
+
+onEvent('click', profile, () => {
+    logout.classList.toggle('is-visible');
+})
+
+onEvent('click', logoutBtn, () => {
+    window.location.replace("index.html");
+})
 
