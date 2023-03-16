@@ -46,8 +46,8 @@ header {
 }
 
 .title {
-    width: 11%;
-    height: 36px;
+    width: 19%;
+    height: 46px;
 }
 
 .title h1 {
@@ -60,7 +60,7 @@ header {
 }
 
 form {
-    width: 19%;
+    width: 14%;
     text-align: right;
 }
   
@@ -92,7 +92,7 @@ form input[type="search"]:hover {
   
 
 nav {
-    width: 70%;
+    width: 60%;
     text-align: center;
 }
 
@@ -156,6 +156,7 @@ section {
     height: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 18px;
 }
 
@@ -171,6 +172,7 @@ section {
     height: 580px;
     border-radius: 5px;
     background-color: #fff;
+    margin-inline: auto;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
 }
 
@@ -310,6 +312,7 @@ button:hover {
     width: 580px;
     height: 100%;
     border: none;
+    margin-inline: auto;
 }
 
 .box1 {
@@ -459,6 +462,7 @@ button:hover {
     background-color: #fff;
     padding: 15px;
     text-align: center;
+    margin-inline: auto;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
 }
 
@@ -635,4 +639,418 @@ p.copyright {
     font-weight: 400; 
     text-align: center;
     margin-top: 15px;
+}
+
+/* -------------------------------- */
+/*          Media Queries           */
+/* -------------------------------- */
+
+@media (max-width: 980px) {
+
+    nav {
+        width: 55%;
+    }
+
+    form input[type="search"] {
+        width: 120px;
+        height: 36px;
+        padding: 0 23px 0 38px;
+        font-size: 13px;
+        font-weight: 300;
+        background-size: 14px;
+    }
+
+    .profile-info {
+        width: 250px;
+        padding: 15px 10px;
+        height: 580px;
+    }
+
+    .posts {
+        width: 540px;
+    }
+}
+
+@media (max-width: 980px) {
+
+    nav ul li, form input {
+        display: none;
+    }
+
+    .title h1 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 56px;
+    }
+
+    .profile-info {
+        width: 280px;
+        padding: 15px 10px;
+        height: 580px;
+    }
+    
+    .profession p {
+        font-size: 18px;
+    }
+    
+    .profession p + p, .analytics p, .upgrade p, .summary h6 {
+        font-size: 11px;
+    }
+    
+    .divider {
+        height: 1px;
+    }
+    
+    .analytics P {
+        line-height: 6px;
+    }
+    
+    .upgrade, .export {
+        height: 150px;
+    }
+    
+    .upgrade p {
+        margin-top: 25px;
+    }
+    
+    .upgrade button {
+        font-size: 14px;
+        width: 160px;
+        height: 46px;
+    }
+    
+    .export {
+        height: 50px;
+        width: 180px;
+    }
+
+    .export p {
+        font-size: 14px;
+    }
+
+    .posts {
+        width: 480px;
+    }
+
+    .post p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .background {
+        margin-top: 10px;
+        height: 510px;
+        padding: 15px 15px;
+    }
+    
+    .subheading {
+        border: none;
+        margin-top: 10px;
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .background .subheading ~ .subheading {
+        margin-top: 35px;
+    }
+    
+    .subheading h3 {
+        margin-top: 2px;
+        font-size: 14px;
+        padding: 3px;
+    }
+    
+    .summary {
+        width: 400px;
+    }
+    
+    .summary p {
+        font-size: 13px;
+
+    }
+    
+    .summary p + p {
+        margin-top: 10px;
+    } 
+
+    .friends {
+        width: 380px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .title h1 {
+        font-size: 17px;
+    }
+
+    .profile-info {
+        width: 380px;
+        padding: 15px 10px;
+        height: 580px;
+    }
+    
+    
+    .profession p + p, .analytics p, .upgrade p, .summary h6 {
+        font-size: 13px;
+    }
+    
+    .divider {
+        height: 1px;
+    }
+
+    .analytics {
+        width: 300px;
+        margin-inline: auto;
+        height: 100px;
+    }
+    
+    .analytics P {
+        line-height: 6px;
+    }
+    
+    .upgrade, .export {
+        height: 150px;
+    }
+    
+    .upgrade p {
+        margin-top: 25px;
+    }
+    
+    .upgrade button {
+        font-size: 14px;
+        width: 160px;
+        height: 46px;
+    }
+    
+    .export {
+        height: 50px;
+        width: 180px;
+    }
+
+    .export p {
+        font-size: 14px;
+    }
+
+    .posts {
+        margin-inline: auto;
+        width: 380px;
+    }
+
+    .background {
+        height: 100%;
+    }
+    
+    .subheading {
+        border: none;
+        margin-top: 10px;
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .subheading h3 {
+        margin-top: 2px;
+        font-size: 14px;
+        padding: 3px;
+    }
+    
+    .summary {
+        width: 290px;
+    }
+    
+    .summary p {
+        margin-top: 4px;
+        font-size: 13px;
+    }
+
+    .summary p + P {
+        margin-top: 10px;
+    }
+
+    .summary h4 {
+        font-size: 15px;
+    }
+    
+    .social-posts {
+        margin-top: 10px;
+        height: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .box1 {
+        border: none;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .post {
+        width: 250px;
+        height: 250px;
+        margin-inline: auto;
+    }
+    
+    .post p {
+        margin-top: 10px;
+        font-size: 14px;
+        color: var(--text-color);
+    }
+
+    .profile {
+        width: 45px;
+        height: 45px;
+        margin: 6px 15px;
+    }
+
+    .friends {
+        width: 380px;
+        height: 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    .title h1 {
+        font-size: 15px;
+    }
+
+    .profile-info {
+        width: 300px;
+        padding: 15px 10px;
+        height: 580px;
+    }
+    
+    .profession p {
+        font-size: 18px;
+    }
+    
+    .profession p + p, .analytics p, .upgrade p, .summary h6 {
+        font-size: 11px;
+    }
+    
+    .divider {
+        height: 1px;
+    }
+    
+    .analytics span {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--app-dark-blue);
+    }
+    
+    .analytics P {
+        line-height: 6px;
+    }
+    
+    .upgrade, .export {
+        height: 150px;
+    }
+    
+    .upgrade p {
+        margin-top: 25px;
+    }
+    
+    .upgrade button {
+        font-size: 14px;
+        width: 160px;
+        height: 46px;
+    }
+    
+    .export {
+        height: 50px;
+        width: 180px;
+    }
+
+    .export p {
+        font-size: 14px;
+    }
+
+    .posts {
+        margin-inline: auto;
+        width: 300px;
+    }
+
+    .background {
+        height: 100%;
+    }
+    
+    .subheading {
+        border: none;
+        margin-top: 10px;
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .subheading h3 {
+        margin-top: 2px;
+        font-size: 14px;
+        padding: 3px;
+    }
+    
+    .summary {
+        width: 270px;
+    }
+    
+    .summary p {
+        margin-top: 4px;
+        font-size: 13px;
+    }
+
+    .summary p + P {
+        margin-top: 10px;
+    }
+
+    .summary h4 {
+        font-size: 15px;
+    }
+    
+    .social-posts {
+        margin-top: 10px;
+        height: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .box1 {
+        border: none;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .post {
+        width: 190px;
+        height: 200px;
+        margin-inline: auto;
+    }
+    
+    .post p {
+        margin-top: 10px;
+        font-size: 14px;
+        color: var(--text-color);
+    }
+
+    .profile {
+        width: 35px;
+        height: 35px;
+        margin: 10px 15px;
+    }
+    
+    .profile img, .profile-image img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 50%;
+    }
+}
+
+@media(max-width:390px) {
+
+    .title h1 {
+        font-size: 13px;
+    }
 }

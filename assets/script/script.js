@@ -15,6 +15,15 @@ function getElement(selector, parent = document) {
 
 const loginBtn = getElement('login');
 let invalidMsg = select('.message');
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+      
+window.addEventListener('resize', () => {
+    vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 const login = [
     { email: 'freeman64@gmail.com', password: 'Fre@45$$' },
 ];
