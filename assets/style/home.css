@@ -917,7 +917,7 @@ p.copyright {
     }
 
     .profile-info {
-        width: 320px;
+        width: 350px;
         padding: 15px 10px;
         height: 580px;
     }
@@ -970,7 +970,7 @@ p.copyright {
 
     .posts {
         margin-inline: auto;
-        width: 320px;
+        width: 350px;
     }
 
     .background {
@@ -1046,7 +1046,7 @@ p.copyright {
     }
 
     .friends {
-        width: 320px;
+        width: 350px;
         height: 100%;
     }
 }
