@@ -323,6 +323,68 @@ input[type="button"]:hover {
         
 }
 
+@media only screen  and (max-width: 890px) {
+
+    .login-page {
+        width: 70%;
+        height: 520px; 
+    }
+
+    .login-form {
+        width: 530px;
+        height: 500px;
+        border: none;
+        padding: 20px 20px;
+        margin-inline: auto;
+    }
+    
+    .login-form .note {
+        border: none;
+        width: 280px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .login-form h2 {
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 600;
+        margin-inline: auto;
+    }
+    
+    .login-form h2 span {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    form:not(p)  {
+        margin-top: 5px;
+        border: none;
+        width: 320px;
+        padding: 15px;
+        height: 320px;
+        margin-inline: auto;
+        text-align: center;
+    }
+    
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding:15px 15px;
+    }
+
+    input[type=button] {
+        margin: 40px 0;
+        width: 140px;
+        margin-inline: auto;
+    }
+
+    .password-reset a {
+        font-size: 14px;
+        margin-left: 58%;
+    }
+        
+}
+
 
 @media only screen  and (max-width: 480px) {
 
