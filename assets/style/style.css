@@ -396,7 +396,7 @@ input[type="button"]:hover {
     }
 
     .login-form {
-        width: 300px;
+        width: 350px;
         height: 500px;
         border: none;
         padding: 15px 10px;
@@ -405,27 +405,27 @@ input[type="button"]:hover {
     
     .login-form .note {
         border: none;
-        width: 250px;
+        width: 290px;
         margin-inline: auto;
         text-align: left;
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .login-form h2 {
         margin-top: 25px;
-        font-size: 22px;
-        font-weight: 400;
+        font-size: 25px;
+        font-weight: 500;
     }
     
     .login-form h2 span {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: 600;
     }
 
     form:not(p)  {
         margin-top: 25px;
         border: none;
-        width: 280px;
+        width: 300px;
         padding: 10px 8px;
         height: 320px;
         margin-inline: auto;
@@ -440,12 +440,12 @@ input[type="button"]:hover {
 
     input[type=button] {
         margin: 40px 0;
-        width: 125px;
+        width: 137px;
         margin-inline: auto;
     }
 
     .password-reset a {
-        margin-left: 54%;
+        margin-left: 57%;
     }
 
     .credentials {
@@ -462,8 +462,48 @@ input[type="button"]:hover {
 @media only screen  and (max-width: 400px) {
 
     .login-page {
-        width: 90%;
+        width: 100%;
         height: 520px;
+    }
+
+    .login-form {
+        width: 280px;
+        height: 500px;
+        border: none;
+        padding: 15px 10px;
+        margin-inline: auto;
+    }
+    
+    .login-form .note {
+        width: 260px;
+        font-size: 14px;
+    }
+
+    .login-form h2 {
+        margin-top: 23px;
+        font-size: 23px;
+        font-weight: 400;
+    }
+    
+    .login-form h2 span {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    form:not(p)  {
+        margin-top: 25px;
+        border: none;
+        width: 260px;
+    }
+
+    input[type=button] {
+        margin: 40px 0;
+        width: 115px;
+        margin-inline: auto;
+    }
+
+    .password-reset a {
+        margin-left: 50%;
     }
         
 }

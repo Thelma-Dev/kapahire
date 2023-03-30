@@ -46,7 +46,7 @@ header {
 }
 
 .title {
-    width: 19%;
+    width: 30%;
     height: 46px;
 }
 
@@ -59,7 +59,7 @@ header {
     letter-spacing: 0.3px;
 }
 
-form {
+/* form {
     width: 14%;
     text-align: right;
 }
@@ -88,11 +88,11 @@ form input[type="search"] {
   
 form input[type="search"]:hover {
     border: 1px solid rgb(255, 255, 255, 0.6);
-}
+} */
   
 
 nav {
-    width: 60%;
+    width: 70%;
     text-align: center;
 }
 
@@ -543,10 +543,10 @@ button:hover {
     border-radius: 5px;
     background-color: #fff;
     position: fixed;
-    top: 8%;
-    right: 10%;
+    top: 5%;
+    right: 21%;
     visibility: hidden;
-    opacity: 0;
+    opacity: 0; 
 }
 
 .logout.is-visible {
@@ -668,6 +668,7 @@ p.copyright {
     .posts {
         width: 540px;
     }
+
 }
 
 @media (max-width: 980px) {
@@ -777,12 +778,17 @@ p.copyright {
         width: 380px;
         height: 100%;
     }
+
+    .logout {
+        top: 4.8%;
+        right: 10%;
+    }
 }
 
 @media (max-width: 750px) {
 
     .title h1 {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .profile-info {
@@ -913,11 +919,11 @@ p.copyright {
 @media (max-width: 480px) {
 
     .title h1 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .profile-info {
-        width: 350px;
+        width: 100%;
         padding: 15px 10px;
         height: 580px;
     }
@@ -970,7 +976,7 @@ p.copyright {
 
     .posts {
         margin-inline: auto;
-        width: 350px;
+        width: 100%;
     }
 
     .background {
@@ -1022,8 +1028,8 @@ p.copyright {
     }
 
     .post {
-        width: 190px;
-        height: 200px;
+        width: 250px;
+        height: 100%;
         margin-inline: auto;
     }
     
@@ -1034,9 +1040,9 @@ p.copyright {
     }
 
     .profile {
-        width: 35px;
-        height: 35px;
-        margin: 10px 15px;
+        width: 45px;
+        height: 45px;
+        margin: 6px 15px;
     }
     
     .profile img, .profile-image img {
@@ -1046,14 +1052,33 @@ p.copyright {
     }
 
     .friends {
-        width: 350px;
+        width: 100%;
         height: 100%;
+    }
+
+    .logout {
+        width: 130px;
+        height: 46px;
+        padding: 10px 10px;
+        top: 6%;
+        right: 10%;
     }
 }
 
 @media(max-width:390px) {
 
     .title h1 {
-        font-size: 13px;
+        font-size: 19px;
     }
+
+    .logout {
+        width: 130px;
+        height: 46px;
+        padding: 10px 10px;
+        top: 6.5%;
+        right: 10%;
+    }
+
+    
+
 }
